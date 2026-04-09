@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Panneau gauche — aligné sur login.html.twig (auth-visual) -->
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      styleClass="auth-visual-panel" alignment="CENTER" spacing="20.0"
+      minWidth="380.0" prefWidth="420.0">
+    <padding>
+        <Insets bottom="32.0" left="32.0" right="32.0" top="32.0"/>
+    </padding>
+    <VBox alignment="CENTER" spacing="12.0" styleClass="visual-content">
+        <Label text="EcoTrack" styleClass="visual-logo"/>
+        <Label text="Bienvenue sur&#10;votre espace éco" styleClass="visual-title" wrapText="true" textAlignment="CENTER"/>
+        <Label maxWidth="340.0"
+               text="Connectez-vous ou créez un compte pour accéder à vos outils de gestion environnementale."
+               styleClass="visual-text" wrapText="true" textAlignment="CENTER"/>
+    </VBox>
+    <Region VBox.vgrow="ALWAYS" maxHeight="48.0"/>
+    <Label text="Énergie · Environnement · Sécurité" styleClass="mascot-caption" wrapText="true" textAlignment="CENTER"/>
+</VBox>

@@ -1,0 +1,292 @@
+/* EcoTrack — JavaFX stylesheet mapped from templates/security/login.html.twig tokens */
+
+.root {
+    -fx-font-family: "Segoe UI", "Outfit", system-ui, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+}
+
+/* ---- Left panel (auth-visual) ---- */
+.auth-visual-panel {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #059669 0%, #10b981 45%, #0ea5e9 100%);
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.12), 24, 0.2, 0, 4);
+}
+
+.visual-content .label {
+    -fx-text-fill: white;
+}
+
+.visual-logo {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.visual-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 500;
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+}
+
+.visual-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: rgba(255, 255, 255, 0.82);
+}
+
+.mascot-caption {
+    -fx-font-size: 11px;
+    -fx-font-weight: 600;
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+    -fx-letter-spacing: 0.04em;
+}
+
+/* ---- Right scroll + form panel ---- */
+.auth-form-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.auth-form-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.auth-form-panel {
+    -fx-background-color: transparent;
+    -fx-alignment: top_center;
+}
+
+.auth-card {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 24px;
+    -fx-border-color: rgba(255, 255, 255, 0.6);
+    -fx-border-radius: 24px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.10), 28, 0.15, 0, 10);
+}
+
+.auth-header {
+    -fx-padding: 0 0 20 0;
+}
+
+.auth-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #111827;
+}
+
+.auth-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #6b7280;
+}
+
+/* Message banner (success / error like .error-message) */
+.message-banner {
+    -fx-background-color: rgba(239, 68, 68, 0.10);
+    -fx-background-radius: 12px;
+    -fx-padding: 10 14;
+    -fx-margin: 0 0 12 0;
+}
+
+.message-banner.success {
+    -fx-background-color: rgba(16, 185, 129, 0.12);
+}
+
+.message-banner-text {
+    -fx-text-fill: #ef4444;
+}
+
+.message-banner.success .message-banner-text {
+    -fx-text-fill: #047857;
+}
+
+.form-group {
+    -fx-spacing: 8;
+}
+
+.form-label {
+    -fx-font-weight: 600;
+    -fx-text-fill: #374151;
+}
+
+.form-input, .form-textarea, .form-combo,
+.password-field.form-input {
+    -fx-background-color: #f7fbff;
+    -fx-background-radius: 14px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 14px;
+    -fx-border-width: 1px;
+    -fx-padding: 12 14;
+    -fx-prompt-text-fill: #9ca3af;
+}
+
+.form-input:focused, .form-textarea:focused, .form-combo:focused,
+.password-field.form-input:focused {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(16, 185, 129, 0.6);
+    -fx-effect: dropshadow(gaussian, rgba(16, 185, 129, 0.2), 8, 0.2, 0, 0);
+}
+
+.form-textarea .content {
+    -fx-background-color: transparent;
+}
+
+.form-actions-row {
+    -fx-padding: 8 0 0 0;
+}
+
+/* Primary button (.btn-submit) */
+.btn-submit {
+    -fx-background-color: linear-gradient(to bottom right, #10b981, #0ea5e9);
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-background-radius: 14px;
+    -fx-padding: 12 20;
+    -fx-cursor: hand;
+}
+
+.btn-submit:hover {
+    -fx-effect: dropshadow(gaussian, rgba(14, 165, 233, 0.35), 18, 0.2, 0, 6);
+    -fx-translate-y: -1;
+}
+
+/* Secondary (.social-btn inspired) */
+.btn-secondary {
+    -fx-background-color: #f9fafb;
+    -fx-text-fill: #374151;
+    -fx-font-weight: 500;
+    -fx-background-radius: 12px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 10 16;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(16, 185, 129, 0.35);
+}
+
+.btn-danger-outline {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-font-weight: 600;
+    -fx-border-color: rgba(239, 68, 68, 0.45);
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 10 16;
+    -fx-cursor: hand;
+}
+
+.section-separator {
+    -fx-padding: 12 0;
+}
+
+/* ---- Auth : checkbox, liens, captcha stub, social ---- */
+.form-actions-inline {
+    -fx-padding: 4 0 0 0;
+}
+
+.auth-checkbox {
+    -fx-text-fill: #4b5563;
+    -fx-font-size: 13px;
+}
+
+.auth-hyperlink {
+    -fx-text-fill: #10b981;
+    -fx-font-weight: 600;
+    -fx-border-width: 0;
+    -fx-underline: false;
+    -fx-padding: 0;
+}
+
+.auth-hyperlink:hover {
+    -fx-text-fill: #059669;
+    -fx-underline: true;
+}
+
+.auth-hyperlink-strong {
+    -fx-text-fill: #10b981;
+    -fx-font-weight: 700;
+    -fx-border-width: 0;
+    -fx-underline: false;
+    -fx-padding: 0;
+}
+
+.auth-hyperlink-strong:hover {
+    -fx-text-fill: #059669;
+    -fx-underline: true;
+}
+
+.captcha-stub-box {
+    -fx-background-color: rgba(14, 165, 233, 0.06);
+    -fx-background-radius: 12px;
+    -fx-border-color: rgba(14, 165, 233, 0.22);
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 12 14;
+}
+
+.captcha-stub-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.social-row {
+    -fx-padding: 4 0 0 0;
+}
+
+.btn-social {
+    -fx-background-color: #f9fafb;
+    -fx-text-fill: #374151;
+    -fx-font-weight: 500;
+    -fx-background-radius: 12px;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1px;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-pref-width: 140px;
+}
+
+.btn-social:hover {
+    -fx-background-color: #ffffff;
+    -fx-border-color: rgba(16, 185, 129, 0.35);
+    -fx-translate-y: -1;
+}
+
+.auth-footer-row {
+    -fx-padding: 8 0 0 0;
+}
+
+.auth-footer-text {
+    -fx-text-fill: #4b5563;
+    -fx-font-size: 14px;
+}
+
+/* TableView (extension future) */
+.eco-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.eco-table .column-header-background {
+    -fx-background-color: #f3f4f6;
+}
+
+.eco-table .column-header .label {
+    -fx-text-fill: #374151;
+    -fx-font-weight: 600;
+}
+
+.eco-table .table-row-cell:selected {
+    -fx-background-color: rgba(16, 185, 129, 0.18);
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+}
